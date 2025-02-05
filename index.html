@@ -11,7 +11,9 @@
 
 <script>
 function hideDiv() {
-   $('#iframe-id').contents().find('#contentSection').hide();
+  var myIframe = document.getElementById("iframe-id");
+  var divElement = myIframe.contentWindow.document.querySelector("contentSection");
+  divElement.style.display = "none";
 }
 </script> 
 </body>
