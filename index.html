@@ -10,9 +10,7 @@
 
 <script>
 function hideDiv() {
-  var myIframe = document.getElementById("iframe-id");
-  var divElement = myIframe.contentWindow.document.querySelector("#contentSection");
-  divElement.style.display = "none";
+  $('iframe').contents().find("div[comp='removepls']").remove();
 }
 </script>
 </body>
